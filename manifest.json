@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "CSGOEmpire Discount Notifier",
+    "version": "1.0",
+    "description": "Plays a sound when a discounted item meets the user-defined threshold on CSGOEmpire.",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://csgoempire.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["notification.wav"],
+        "matches": ["*://csgoempire.com/*"]
+      }
+    ]
+  }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discount Notifier</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    label, input, button {
+      margin: 5px 0;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <label for="threshold">Discount Threshold (%):</label>
+  <input type="number" id="threshold" step="0.01" min="0" placeholder="e.g., 2">
+  <button id="save">Save Threshold</button>
+  <script src="popup.js"></script>
+</body>
+</html>
