@@ -15,4 +15,4 @@ ENJOY!!
 # Usage Guide
 
 1. You need to click once on the marketplace page for the extension to work.
-2. You can change the discount threshold from the Chrome Toolbar.
+2. You can change the discount threshold from the Chrome Toolbar. It's -2% by default.
